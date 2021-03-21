@@ -14,7 +14,7 @@ export default () => {
   if(config.signInEnabled && name === ''){
     // SignInコンポーネントのpropsの１つとしてsetNameが渡ってくる
     // compornentに値を渡す => props
-    return <SignIn setName={setName} />;
+    return <SignIn setName={ setName } />;
   }else{
     return <Main name={name} />;
   }
